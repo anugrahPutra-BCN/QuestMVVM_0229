@@ -16,3 +16,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+            MyArisitekturMVVMTheme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    SiswaApp(
+                        modifier = Modifier.padding(innerPadding)
+                    )
+                }
+            }
+        }
+    }
+}
